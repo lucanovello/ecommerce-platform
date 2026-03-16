@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docker:up": "docker compose -f infra/docker/docker-compose.yml up -d",
+    "docker:down": "docker compose -f infra/docker/docker-compose.yml down",
+    "docker:restart": "docker compose -f infra/docker/docker-compose.yml down && docker compose -f infra/docker/docker-compose.yml up -d",
+    "docker:logs": "docker compose -f infra/docker/docker-compose.yml logs -f",
+    "docker:ps": "docker compose -f infra/docker/docker-compose.yml ps"
   },
   "keywords": [],
   "author": "",
