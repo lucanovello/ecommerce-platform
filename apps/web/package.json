@@ -1,7 +1,10 @@
 {
   "name": "web",
   "version": "0.1.0",
+  "description": "Frontend for the e-commerce application built with Next.js. It provides a user-friendly interface for browsing products, managing the shopping cart, and completing purchases.",
+  "author": "Luca Novello",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
