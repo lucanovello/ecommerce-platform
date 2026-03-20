@@ -1,8 +1,12 @@
 {
   "name": "ecommerce-platform",
   "version": "1.0.0",
-  "description": "",
+  "description": "Full-stack e-commerce application built with NestJS, Next.js, and Prisma. It provides a seamless shopping experience with features like product browsing, user authentication, and order management.",
   "main": "index.js",
+  "author": "Luca Novello",
+  "private": true,
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "docker:up": "docker compose -f infra/docker/docker-compose.yml up -d",
     "docker:down": "docker compose -f infra/docker/docker-compose.yml down",
@@ -11,9 +15,6 @@
     "docker:ps": "docker compose -f infra/docker/docker-compose.yml ps"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.32.1",
   "devDependencies": {
     "@types/node": "^25.5.0",
     "husky": "^9.1.7",

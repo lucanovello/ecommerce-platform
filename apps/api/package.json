@@ -1,8 +1,8 @@
 {
   "name": "api",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "API for the e-commerce application built with NestJS. It provides endpoints for product browsing, user authentication, and order management.",
+  "author": "Luca Novello",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
