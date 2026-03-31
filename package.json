@@ -8,11 +8,11 @@
   "license": "UNLICENSED",
   "packageManager": "pnpm@10.32.1",
   "scripts": {
-    "docker:up": "docker compose -f infra/docker/docker-compose.yml up -d",
-    "docker:down": "docker compose -f infra/docker/docker-compose.yml down",
-    "docker:restart": "docker compose -f infra/docker/docker-compose.yml down && docker compose -f infra/docker/docker-compose.yml up -d",
-    "docker:logs": "docker compose -f infra/docker/docker-compose.yml logs -f",
-    "docker:ps": "docker compose -f infra/docker/docker-compose.yml ps"
+    "docker:up": "docker compose --env-file infra/docker/.env -f infra/docker/docker-compose.yml up -d",
+    "docker:down": "docker compose --env-file infra/docker/.env -f infra/docker/docker-compose.yml down",
+    "docker:restart": "docker compose --env-file infra/docker/.env -f infra/docker/docker-compose.yml down && docker compose --env-file infra/docker/.env -f infra/docker/docker-compose.yml up -d",
+    "docker:logs": "docker compose --env-file infra/docker/.env -f infra/docker/docker-compose.yml logs -f",
+    "docker:ps": "docker compose --env-file infra/docker/.env -f infra/docker/docker-compose.yml ps"
   },
   "keywords": [],
   "devDependencies": {
